@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- fontAwesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+  </head>
+  <main class="main">
+    <section class="card">
+      <article class="header-container">
+        <h1 class="heading"><span>Rock</span> <span>Paper</span> <span>Scissor</span></h1>
+        <div class="scores-container">
+          <p class="score-text">User Score: <span class="score" id="user-score">0</span></p>
+          <p class="score-text">Comp Score: <span class="score" id="comp-score">0</span></p>
+        </div>
+      </article>
+      <article class="weapons-container">
+        <button
+          class="btn-weapon btn-rock"
+          onclick="check('rock')"
+        >
+          <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button
+          class="btn-weapon btn-paper"
+          onclick="check('paper')"
+        >
+         <i class="fa-solid fa-hand"></i> 
+        </button>
+        <button
+          class="btn-weapon btn-scissor"
+          onclick="check('scissors')"
+        >
+         <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+      </article>
+      <article class="result-container">
+        <p
+          class="user-choice result-text"
+          id="user-choice">
+        </p>
+        <p
+          class="computer-choice result-text"
+          id="comp-choice">
+        </p>
+        <p
+          class="result"
+          id="result">
+        </p>
+  
+        <button class="btn btn-reset" id="btn-reset">Reset</button>
+      </article>
+    </section>
+  </main>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

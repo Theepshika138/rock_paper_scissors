@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* project css */
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+}
+
+.card {
+  min-height: 20rem;
+  width: 24rem;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  background-color: #ececec;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  background: transparent;
+  border: 1px solid #717377;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.score-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.score {
+  font-weight: 900;
+}
+
+.weapons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-weapon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 45, 80);
+  color: #fff;
+  border: 2px solid rgb(255, 45, 80);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-weapon:hover {
+  cursor: pointer;
+  margin-top: -5px;
+  transform: scale(1.1);
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.result-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.weapon {
+  background-color: rgb(135, 30, 255);
+  padding: 0.25rem 1rem;
+  border-radius: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.result {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  color: #fff;
+}
+
+.btn-reset {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #3a5191;
+  color: #fff;
+  border: 2px solid #3a5191;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-reset:hover {
+  cursor: pointer;
+  margin-top: -5px;
+  transform: scale(1.1);
+}
